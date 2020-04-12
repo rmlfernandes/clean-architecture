@@ -8,7 +8,7 @@ This solution follows the Clean Architecture and it is a demo app for learning p
 * ASP .NET Core 3.1
 * MediatR
 * FluentValidation
-* NUnit, FluentAssertions & Moq
+* XUnit, FluentAssertions & Moq
 
 ## Overview
 
