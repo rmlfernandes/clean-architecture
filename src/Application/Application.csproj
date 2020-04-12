@@ -13,13 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Customers\Commands\DeleteCustomer\" />
-    <Folder Include="Customers\Commands\UpdateCustomer\" />
-    <Folder Include="Customers\Queries\GetCustomer\" />
-    <Folder Include="Customers\Queries\GetCustomerById\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 

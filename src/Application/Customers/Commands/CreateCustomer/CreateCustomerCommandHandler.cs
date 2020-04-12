@@ -30,7 +30,7 @@
                 PhoneNumber = command.PhoneNumber,
                 Website = string.IsNullOrEmpty(command.Website) ? null : new Uri(command.Website),
                 Created = DateTime.UtcNow,
-                CreatedBy = this.identityService.GetUserIdentifierAsync().ToString(),
+                CreatedBy = (await this.identityService.GetUserIdentifierAsync()).ToString(),
             };
 
             return await this.repository

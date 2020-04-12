@@ -1,18 +1,12 @@
-﻿namespace CleanArchitecture.Application.Customers.Commands.CreateCustomer
+﻿using System;
+using FluentValidation;
+
+namespace CleanArchitecture.Application.Customers.Commands.UpdateCustomer
 {
-    using System;
-    using FluentValidation;
-
-    public class CreateCustomerCommandValidator : AbstractValidator<CreateCustomerCommand>
+    public class UpdateCustomerCommandValidator : AbstractValidator<UpdateCustomerCommand>
     {
-        public CreateCustomerCommandValidator()
+        public UpdateCustomerCommandValidator()
         {
-            this.RuleFor(c => c.Name)
-                .NotEmpty();
-
-            this.RuleFor(c => c.Age)
-                .GreaterThan(0);
-
             this.RuleFor(c => c.PhoneNumber)
                 .GreaterThan(0)
                 .When(c => c.PhoneNumber != null);
