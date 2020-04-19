@@ -7,6 +7,9 @@ namespace CleanArchitecture.Application.Customers.Commands.UpdateCustomer
     {
         public UpdateCustomerCommandValidator()
         {
+            this.RuleFor(c => c.Id)
+                .NotEmpty();
+
             this.RuleFor(c => c.PhoneNumber)
                 .GreaterThan(0)
                 .When(c => c.PhoneNumber != null);
@@ -18,7 +21,7 @@ namespace CleanArchitecture.Application.Customers.Commands.UpdateCustomer
 
         private static bool ValidUri(string url)
         {
-            return Uri.TryCreate(url, UriKind.RelativeOrAbsolute, out _);
+            return Uri.TryCreate(url, UriKind.Absolute, out _);
         }
     }
 }

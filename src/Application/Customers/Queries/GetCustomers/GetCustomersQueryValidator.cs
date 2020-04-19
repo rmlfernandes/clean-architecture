@@ -22,7 +22,7 @@
 
         private static bool ValidUri(string url)
         {
-            return Uri.TryCreate(url, UriKind.RelativeOrAbsolute, out _);
+            return Uri.TryCreate(url, UriKind.Absolute, out _);
         }
     }
 }

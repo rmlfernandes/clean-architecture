@@ -15,17 +15,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{89409BC9-6B7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B50CB754-37A5-422D-8C6E-7E91D8359696}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{FD79B7D1-3C38-4269-A691-D420672D4BEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{FD79B7D1-3C38-4269-A691-D420672D4BEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{0B2317B8-71F7-4C8F-8CF4-3BC0CC448071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{0B2317B8-71F7-4C8F-8CF4-3BC0CC448071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{03F1142C-48F6-4C85-97C2-7966AE8CB21A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{03F1142C-48F6-4C85-97C2-7966AE8CB21A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{6BAC3CD4-9149-46C2-A748-62212273EE05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{6BAC3CD4-9149-46C2-A748-62212273EE05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.UnitTests", "tests\Domain.UnitTests\Domain.UnitTests.csproj", "{23C1D9DD-6BC1-470A-8D2C-5B059259F336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UnitTests", "tests\Domain.UnitTests\Domain.UnitTests.csproj", "{23C1D9DD-6BC1-470A-8D2C-5B059259F336}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.IntegrationTests", "tests\CleanArchitecture.IntegrationTests\CleanArchitecture.IntegrationTests.csproj", "{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.IntegrationTests", "tests\CleanArchitecture.IntegrationTests\CleanArchitecture.IntegrationTests.csproj", "{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.UnitTests", "tests\Infrastructure.UnitTests\Infrastructure.UnitTests.csproj", "{4A4F1213-0D2C-460A-BE36-1B601509E98A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4F1213-0D2C-460A-BE36-1B601509E98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4F1213-0D2C-460A-BE36-1B601509E98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4F1213-0D2C-460A-BE36-1B601509E98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4F1213-0D2C-460A-BE36-1B601509E98A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{6BAC3CD4-9149-46C2-A748-62212273EE05} = {B50CB754-37A5-422D-8C6E-7E91D8359696}
 		{23C1D9DD-6BC1-470A-8D2C-5B059259F336} = {B50CB754-37A5-422D-8C6E-7E91D8359696}
 		{4F63AEB5-E3B1-413F-81E4-44B987FB74E5} = {B50CB754-37A5-422D-8C6E-7E91D8359696}
+		{4A4F1213-0D2C-460A-BE36-1B601509E98A} = {B50CB754-37A5-422D-8C6E-7E91D8359696}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CA40367-D2BD-4F60-B6F1-EB4E59CB60E9}

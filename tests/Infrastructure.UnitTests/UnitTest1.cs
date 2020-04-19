@@ -1,4 +1,4 @@
-namespace Domain.UnitTests
+namespace CleanArchitecture.Infrastructure.UnitTests
 {
     using Xunit;
 

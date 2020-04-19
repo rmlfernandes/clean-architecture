@@ -28,7 +28,7 @@
 
         public void UpdateWebsite(string url)
         {
-            if(!Uri.TryCreate(url, UriKind.RelativeOrAbsolute, out var website))
+            if(!Uri.TryCreate(url, UriKind.Absolute, out var website))
             {
                 throw new InvalidCustomerOperationException($"'{website}' is not a valid value for customer website.");
             }
