@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\CleanArchitecture\WebAPI.csproj", "{98D9C5B2-2004-4175-AE47-C80FD80FF9C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "CleanArchitecture\WebAPI.csproj", "{98D9C5B2-2004-4175-AE47-C80FD80FF9C3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49AC5A5A-AB70-40BD-B5E8-798BE11BCB58}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,19 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{89409BC9-6B7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B50CB754-37A5-422D-8C6E-7E91D8359696}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{FD79B7D1-3C38-4269-A691-D420672D4BEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{FD79B7D1-3C38-4269-A691-D420672D4BEB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{0B2317B8-71F7-4C8F-8CF4-3BC0CC448071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{0B2317B8-71F7-4C8F-8CF4-3BC0CC448071}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{03F1142C-48F6-4C85-97C2-7966AE8CB21A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{03F1142C-48F6-4C85-97C2-7966AE8CB21A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{6BAC3CD4-9149-46C2-A748-62212273EE05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.UnitTests", "Tests\Application.UnitTests\Application.UnitTests.csproj", "{6BAC3CD4-9149-46C2-A748-62212273EE05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UnitTests", "tests\Domain.UnitTests\Domain.UnitTests.csproj", "{23C1D9DD-6BC1-470A-8D2C-5B059259F336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UnitTests", "Tests\Domain.UnitTests\Domain.UnitTests.csproj", "{23C1D9DD-6BC1-470A-8D2C-5B059259F336}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.IntegrationTests", "tests\CleanArchitecture.IntegrationTests\CleanArchitecture.IntegrationTests.csproj", "{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.UnitTests", "tests\Infrastructure.UnitTests\Infrastructure.UnitTests.csproj", "{4A4F1213-0D2C-460A-BE36-1B601509E98A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.UnitTests", "Tests\Infrastructure.UnitTests\Infrastructure.UnitTests.csproj", "{4A4F1213-0D2C-460A-BE36-1B601509E98A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +57,6 @@ Global
 		{23C1D9DD-6BC1-470A-8D2C-5B059259F336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23C1D9DD-6BC1-470A-8D2C-5B059259F336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23C1D9DD-6BC1-470A-8D2C-5B059259F336}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F63AEB5-E3B1-413F-81E4-44B987FB74E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A4F1213-0D2C-460A-BE36-1B601509E98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4A4F1213-0D2C-460A-BE36-1B601509E98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A4F1213-0D2C-460A-BE36-1B601509E98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -78,7 +72,6 @@ Global
 		{03F1142C-48F6-4C85-97C2-7966AE8CB21A} = {89409BC9-6B78-4AB3-B202-228A609C1695}
 		{6BAC3CD4-9149-46C2-A748-62212273EE05} = {B50CB754-37A5-422D-8C6E-7E91D8359696}
 		{23C1D9DD-6BC1-470A-8D2C-5B059259F336} = {B50CB754-37A5-422D-8C6E-7E91D8359696}
-		{4F63AEB5-E3B1-413F-81E4-44B987FB74E5} = {B50CB754-37A5-422D-8C6E-7E91D8359696}
 		{4A4F1213-0D2C-460A-BE36-1B601509E98A} = {B50CB754-37A5-422D-8C6E-7E91D8359696}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
