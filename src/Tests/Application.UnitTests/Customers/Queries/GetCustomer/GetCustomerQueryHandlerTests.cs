@@ -14,14 +14,14 @@
 
     public class GetCustomerQueryHandlerTests
     {
-        private readonly Mock<ICustomerRepository> repositoryMock;
+        private readonly Mock<ICustomersRepository> repositoryMock;
 
         private readonly GetCustomerQueryHandler handler;
         private readonly Fixture fixture;
 
         public GetCustomerQueryHandlerTests()
         {
-            this.repositoryMock = new Mock<ICustomerRepository>();
+            this.repositoryMock = new Mock<ICustomersRepository>();
 
             this.handler = new GetCustomerQueryHandler(this.repositoryMock.Object);
             this.fixture = new Fixture();

@@ -6,13 +6,13 @@
     using CleanArchitecture.Application.Customers.Queries.GetCustomers;
     using CleanArchitecture.Domain.Entities;
 
-    public interface ICustomerRepository
+    public interface ICustomersRepository
     {
         Task<Guid> CreateCustomerAsync(Customer customer);
 
         Task DeleteCustomerAsync(Guid id);
 
-        Task<IEnumerable<Customer>> GetCustomersAsync(GetCustomersQuery query);
+        Task<List<Customer>> GetCustomersAsync(GetCustomersQuery query);
 
         Task<Customer> GetCustomerAsync(Guid id);
 

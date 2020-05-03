@@ -7,9 +7,9 @@
 
     public class DeleteCustomerCommandHandler : IRequestHandler<DeleteCustomerCommand>
     {
-        private readonly ICustomerRepository repository;
+        private readonly ICustomersRepository repository;
 
-        public DeleteCustomerCommandHandler(ICustomerRepository repository)
+        public DeleteCustomerCommandHandler(ICustomersRepository repository)
         {
             this.repository = repository;
         }

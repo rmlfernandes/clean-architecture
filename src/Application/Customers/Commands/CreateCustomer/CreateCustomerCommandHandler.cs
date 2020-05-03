@@ -9,11 +9,11 @@
 
     public class CreateCustomerCommandHandler : IRequestHandler<CreateCustomerCommand, Guid>
     {
-        private readonly ICustomerRepository repository;
+        private readonly ICustomersRepository repository;
         private readonly IIdentityService identityService;
 
         public CreateCustomerCommandHandler(
-            ICustomerRepository repository,
+            ICustomersRepository repository,
             IIdentityService identityService)
         {
             this.repository = repository;

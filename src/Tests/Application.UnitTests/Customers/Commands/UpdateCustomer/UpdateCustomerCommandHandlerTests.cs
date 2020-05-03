@@ -12,7 +12,7 @@
 
     public class UpdateCustomerCommandHandlerTests
     {
-        private readonly Mock<ICustomerRepository> repositoryMock;
+        private readonly Mock<ICustomersRepository> repositoryMock;
         private readonly Mock<IIdentityService> identityServiceMock;
 
         private readonly UpdateCustomerCommandHandler handler;
@@ -20,7 +20,7 @@
 
         public UpdateCustomerCommandHandlerTests()
         {
-            this.repositoryMock = new Mock<ICustomerRepository>();
+            this.repositoryMock = new Mock<ICustomersRepository>();
             this.identityServiceMock = new Mock<IIdentityService>();
 
             this.handler = new UpdateCustomerCommandHandler(

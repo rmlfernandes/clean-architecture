@@ -8,7 +8,7 @@
     using CleanArchitecture.Application.Customers.Queries.GetCustomers;
     using CleanArchitecture.Domain.Entities;
 
-    public class InMemoryCustomersRepository : ICustomerRepository
+    public class InMemoryCustomersRepository : ICustomersRepository
     {
         private readonly Dictionary<Guid, Customer> customers;
 
@@ -41,11 +41,12 @@
             return Task.FromResult(customer);
         }
 
-        public Task<IEnumerable<Customer>> GetCustomersAsync(GetCustomersQuery query)
+        public Task<List<Customer>> GetCustomersAsync(GetCustomersQuery query)
         {
             var customers = this.customers
                 .Where(c => BuildGetCustomersFilter(c, query))
-                .Select(c => c.Value);
+                .Select(c => c.Value)
+                .ToList();
 
             return Task.FromResult(customers);
         }

@@ -10,13 +10,13 @@
 
     public class DeleteCustomerCommandHandlerTests
     {
-        private readonly Mock<ICustomerRepository> repositoryMock;
+        private readonly Mock<ICustomersRepository> repositoryMock;
 
         private readonly DeleteCustomerCommandHandler handler;
 
         public DeleteCustomerCommandHandlerTests()
         {
-            this.repositoryMock = new Mock<ICustomerRepository>();
+            this.repositoryMock = new Mock<ICustomersRepository>();
 
             this.handler = new DeleteCustomerCommandHandler(this.repositoryMock.Object);
         }

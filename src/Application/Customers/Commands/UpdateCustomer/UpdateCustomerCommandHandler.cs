@@ -8,11 +8,11 @@
 
     public class UpdateCustomerCommandHandler : IRequestHandler<UpdateCustomerCommand>
     {
-        private readonly ICustomerRepository repository;
+        private readonly ICustomersRepository repository;
         private readonly IIdentityService identityService;
 
         public UpdateCustomerCommandHandler(
-            ICustomerRepository repository,
+            ICustomersRepository repository,
             IIdentityService identityService)
         {
             this.repository = repository;

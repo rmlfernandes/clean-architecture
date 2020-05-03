@@ -9,7 +9,7 @@
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
-            services.AddSingleton<ICustomerRepository, InMemoryCustomersRepository>();
+            services.AddSingleton<ICustomersRepository, InMemoryCustomersRepository>();
             services.AddSingleton<IIdentityService, IdentityService>();
 
             return services;

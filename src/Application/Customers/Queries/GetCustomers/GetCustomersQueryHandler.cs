@@ -9,9 +9,9 @@
 
     public class GetCustomersQueryHandler : IRequestHandler<GetCustomersQuery, List<CustomerDto>>
     {
-        private readonly ICustomerRepository repository;
+        private readonly ICustomersRepository repository;
 
-        public GetCustomersQueryHandler(ICustomerRepository repository)
+        public GetCustomersQueryHandler(ICustomersRepository repository)
         {
             this.repository = repository;
         }
